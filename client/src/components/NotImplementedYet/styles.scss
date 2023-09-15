@@ -1,0 +1,23 @@
+@import "../../variables.scss";
+
+.not-implemented {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $light-background;
+
+  h1 {
+    font-size: 2rem;
+    color: $text-color;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: mix($text-color, $light-background, 50%);
+    text-align: center;
+    max-width: 400px;
+    margin-top: 1rem;
+  }
+}

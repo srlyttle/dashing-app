@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.core.json",
+  "include": ["src", "test",  "../common"],
+  "compilerOptions": {
+    "types": ["jest", "node"],
+  },
+  "references": [
+
+]
+}

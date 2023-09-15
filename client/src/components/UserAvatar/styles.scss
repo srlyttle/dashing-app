@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.user-profile {
+  position: relative;
+  cursor: pointer;
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 150px;
+    border: 1px solid $dark-border;
+    border-radius: $border-radius;
+    background-color: $light-background;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    .logout-button {
+      width: 100%;
+      padding: 10px 15px;
+      text-align: left;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        background-color: mix($light-background, $secondary-color, 5%);
+      }
+    }
+  }
+}

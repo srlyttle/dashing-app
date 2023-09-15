@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.brand-name-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.brand-name {
+  font-family: "Arial", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #222;
+  background: linear-gradient(
+    90deg,
+    rgba(58, 123, 213, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  border-radius: 5px;
+  display: block;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+
+.brand-subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: $subtle-text-color;
+  text-align: left;
+}

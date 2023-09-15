@@ -1,0 +1,8 @@
+@import "../../variables.scss";
+
+.input {
+  padding: 0.625rem;
+  border-radius: $border-radius;
+  color: $text-color;
+  border: 2px solid $dark-border;
+}

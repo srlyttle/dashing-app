@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.navbar {
+  background-color: $light-background;
+
+  .navbar-container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+
+      .brand-text {
+        align-self: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        white-space: nowrap;
+        color: $text-color;
+      }
+    }
+  }
+}

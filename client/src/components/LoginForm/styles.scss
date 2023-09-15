@@ -1,0 +1,139 @@
+@import "../../variables.scss";
+
+.section-container {
+  animation: slideIn 1s forwards 0.5s;
+  animation: fadeIn 0.5s ease-out 0s 1;
+  width: 100%;
+  height: 100%;
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;
+    margin: auto;
+
+    @media (min-width: 768px) {
+      height: 100vh;
+    }
+
+    .form-container {
+      width: 100%;
+
+      border-radius: $border-radius;
+      box-shadow: 0 0 2px rgba(15, 15, 15, 0.28);
+
+      .form-content {
+        padding: 1.5rem;
+
+        > * + * {
+          margin-top: 1.5rem;
+        }
+
+        .form-fieldset {
+          border: none;
+          padding: 0;
+        }
+
+        .form-legend {
+          font-size: 18px;
+          font-weight: bold;
+          color: $text-color;
+          margin-bottom: 10px;
+        }
+
+        .form-error {
+          color: $error-color;
+          font-weight: bolder;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $text-color;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: $text-color;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+          width: 95%;
+          padding: 0.625rem;
+          border-radius: $border-radius;
+          border: 1px solid $light-border;
+          color: $text-color;
+
+          @media (min-width: 768px) {
+            width: 98%;
+          }
+        }
+
+        .form-control--flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .form-checkbox {
+          display: flex;
+          align-items: center;
+          color: $dark-border;
+          justify-content: center;
+          .form-label__remember {
+            padding-top: 0.5rem;
+          }
+        }
+
+        input[type="checkbox"] {
+          width: 16px;
+          height: 16px;
+          border-radius: 0.25rem;
+          border: 1px solid $light-border;
+          background-color: $light-background;
+
+          &.dark {
+            background-color: $dark-background;
+            border-color: $dark-border;
+          }
+        }
+
+        .label-wrapper {
+          display: flex;
+          align-items: center;
+          color: $dark-border;
+
+          &.dark {
+            color: $text-color;
+          }
+
+          .label__remember {
+            padding-top: 0.5rem;
+          }
+        }
+
+        a {
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: $primary-color;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
